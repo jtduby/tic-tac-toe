@@ -60,7 +60,7 @@ class Game:
             s = input("{0} to play:".format(self._curr_player[0]))
             try:
                 self._ttt[int(s)] = self._curr_player[0]
-            except IndexError:
+            except (IndexError, TypeError, ValueError):
                 print("Ya can't move there ya dingus")
                 time.sleep(3)
                 continue
