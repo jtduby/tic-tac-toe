@@ -1,6 +1,7 @@
 from os import system
 import time
 
+
 class TTT:
     def __init__(self):
         self._board = [None for _ in range(9)]

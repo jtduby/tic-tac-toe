@@ -2,6 +2,7 @@ import unittest
 
 from ttt import TTT
 
+
 class TestBoard(unittest.TestCase):
     def setUp(self):
         self.game = TTT()
